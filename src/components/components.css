@@ -1,0 +1,23 @@
+.custom-select {
+    width: 150px;
+    /* Adjust width */
+    height: 30px;
+    /* Adjust height */
+    padding: 5px;
+    /* Add padding */
+    font-size: 14px;
+    /* Adjust font size */
+    border-radius: 5px;
+    /* Add border radius */
+    border: 1px solid #ccc;
+    /* Customize border */
+    background-color: #f8f8f8;
+    /* Background color */
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove outline */
+}

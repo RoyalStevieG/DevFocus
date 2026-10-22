@@ -1,0 +1,31 @@
+/* src/App.css */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    /* Space between grid items */
+}
+
+.grid-item {
+    flex: 1 1 200px;
+    /* Grow, shrink, and minimum width of each item */
+    background-color: #f0f0f0;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .grid-item {
+        flex: 1 1 calc(33.333% - 32px);
+        /* 3 columns on medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-item {
+        flex: 1 1 calc(25% - 32px);
+        /* 4 columns on large screens */
+    }
+}
